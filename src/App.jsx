@@ -24,7 +24,7 @@ const BarGraph = ({ data, label }) => (
       <h3 className="text-center text-lg font-semibold mb-2">{label}</h3>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-          <CartesianGrid strokeDasharray="3 3" />
+          <CartesianGrid strokeDasharray="3x 3" />
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
@@ -111,7 +111,7 @@ function App() {
         transition={{ duration: 1 }}
         className="text-4xl font-extrabold text-center mb-6 text-gray-800"
       >
-        🚨 AWS Sensor Alerts & Real-Time Dashboard
+        🚨 Prevenix Alerts & Real-Time Dashboard
       </motion.h1>
 
       <div className="w-full max-w-5xl">
